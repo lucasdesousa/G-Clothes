@@ -17,7 +17,7 @@ let isHCMember = false;
 let interval;
 
 const extensionInfo = {
-  name: "G-Wardrobe",
+  name: "Rainbow Clothes",
   description: "Clothes tools for fun",
   version: "1.0.0",
   author: "!K2",
@@ -111,7 +111,7 @@ function fetchFigureSetIds(hotel) {
       selectableColors = filteredColors;
 
       const chatPacket = new HPacket(
-        `{in:Chat}{i:-1}{s:"G-Wardrobe sucessfully loaded! (${
+        `{in:Chat}{i:-1}{s:"Rainbow Clothes sucessfully loaded! (${
           isHCMember ? "HC" : "Non-HC"
         })"}{i:0}{i:33}{i:0}{i:0}`
       );
@@ -196,7 +196,7 @@ function onCommandSended(hMessage) {
 
     setColorsInterval();
     const chatPacket = new HPacket(
-      `{in:Chat}{i:-1}{s:"G-Wardrobe - RGB mode has been ${
+      `{in:Chat}{i:-1}{s:"Rainbow Clothes - RGB mode has been ${
         extensionEnabled ? "activated" : "deactivated"
       }"}{i:0}{i:33}{i:0}{i:0}`
     );

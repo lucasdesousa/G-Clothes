@@ -1,11 +1,11 @@
 {
-  "title": "G-Wardrobe",
+  "title": "RainbowClothes",
   "description": "Clothes tools for fun!\n\nUSAGE:\n!rgb to toggle RGB mode ON/OFF",
   "version": "1.0.0",
   "categories": ["Fun"],
-  "source": "https://github.com/lucasdesousa/G-Wardrobe",
-  "readme": "https://github.com/lucasdesousa/G-Wardrobe/blob/main/README.md",
-  "releases": "https://github.com/lucasdesousa/G-Wardrobe/releases",
+  "source": "https://github.com/lucasdesousa/RainbowClothes",
+  "readme": "https://github.com/lucasdesousa/RainbowClothes/blob/main/README.md",
+  "releases": "https://github.com/lucasdesousa/RainbowClothes/releases",
   "stable": true,
   "language": "Node.js",
   "commands": {
