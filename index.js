@@ -125,17 +125,14 @@ async function setColorsInterval() {
     const infoPacket = new HPacket("{out:InfoRetrieve}");
     ext.sendToServer(infoPacket);
 
-    await gAsync.awaitPacket(
-      new AwaitingPacket("UserObject", HDirection.TOCLIENT, 2000).addCondition(
-        (hPacket) => {
-          let id, username;
-          [id, username, originalFigureString, originalUserGender] =
-            hPacket.read("iSSS");
-          changeClothes();
-          interval = setInterval(changeClothes, 5000);
-        }
-      )
+    let hPacket = await gAsync.awaitPacket(
+      new AwaitingPacket("UserObject", HDirection.TOCLIENT, 2000)
     );
+    let id, username;
+    [id, username, originalFigureString, originalUserGender] =
+      hPacket.read("iSSS");
+    changeClothes();
+    interval = setInterval(changeClothes, 5000);
   } else {
     clearInterval(interval);
     interval = null;
