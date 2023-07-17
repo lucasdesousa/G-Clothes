@@ -5,6 +5,7 @@
   "categories": ["Fun"],
   "source": "https://github.com/lucasdesousa/G-Clothes",
   "readme": "https://github.com/lucasdesousa/G-Clothes/blob/main/README.md",
+  "releases": "https://github.com/lucasdesousa/G-Clothes/releases",
   "stable": true,
   "language": "Node.js",
   "commands": {
